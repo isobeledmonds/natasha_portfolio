@@ -1,0 +1,132 @@
+
+/* header section */
+header {
+    display: flex;
+    height: 5rem;
+    position: static;
+    align-items: center;
+    width: 100%;
+} 
+
+.title {
+  display: flex;
+  color: #484955;
+  /* font-family: halyard-display;*/
+  padding-left: 2rem;
+  overflow: auto;
+  
+}
+
+
+
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.nav a {
+  padding-right: 2.5rem;
+  font-size: 1.2rem;
+}
+
+
+
+.banner {
+  text-align: center;
+  padding-top: 5rem;
+  position: relative;
+  padding-bottom: 8rem;
+}
+
+.banner h2 {
+  padding-top: 1rem;
+}
+
+
+.my-work {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #9ce5c7;
+  width: 100%;
+  position: relative;
+}
+
+.my-work h1 {
+  padding-left: 3rem;
+}
+
+.hotpatch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 7rem;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  padding-right: 7rem;
+  border-bottom: 0.08rem solid #484955;
+}
+
+.button {
+display: flex;
+justify-content: center;
+align-content: center;
+padding: 1rem;
+}
+
+button {
+  border-radius: 1.5rem;
+  height: 3rem;
+  width: 9rem;
+  background-color: #484955;
+  color: #fff;
+}
+
+
+.breakline {
+  display: flex;
+  height: 2rem;
+  width: 75%;
+  
+}
+
+
+
+.culture {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  padding-left: 7rem;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  padding-right: 8rem;
+}
+
+.culture h1 {
+  padding-top: 2rem;
+}
+
+.culture p {
+  padding-top: 3rem;
+}
+
+.pic img {
+  width: 500px;
+  height: auto;
+  
+}
+
+.padding {
+  width: 20rem;
+}
+
+
+footer {
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 0.1rem solid #484955;
+  
+}
