@@ -1,20 +1,33 @@
 
+
+
+body {
+  margin: 0;
+  font-family: "Open Sans";
+  font-weight: 300;
+}
+
+
 /* header section */
 header {
     display: flex;
     height: 5rem;
-    position: static;
+    position: relative;
+    z-index: 2;
     align-items: center;
     width: 100%;
+    background-color: #e0e2ed;
+    color: #484955;
 } 
 
 .title {
-  display: flex;
+  display: block;
   color: #484955;
-  /* font-family: halyard-display;*/
+  font-style: normal;
   padding-left: 2rem;
-  overflow: auto;
-  
+  min-width: fit-content;
+  font-weight: 100;
+
 }
 
 
@@ -27,22 +40,90 @@ header {
 }
 
 .nav a {
-  padding-right: 2.5rem;
+  padding-right: 5.5rem;
   font-size: 1.2rem;
+  font-style: normal;
+  text-decoration: none;
+  color: #484955;
+}
+
+.about {
+  margin-right: 1.5rem
+}
+
+.home {
+  border-bottom: #484955 0.15rem solid;
+  border-spacing: 0.2rem;
 }
 
 
+.home:hover { 
+  color: #f759b8;
+  font-weight: bolder;
+  border-bottom: #f759b8 0.15rem solid;
+  border-spacing: 0.2rem;
+  cursor: pointer;
+ }
+
+ .about:hover { 
+  color: #f759b8;
+  font-weight: bolder;
+  border-bottom: #f759b8 0.15rem solid;
+  border-spacing: 0.2rem;
+  cursor: pointer;
+ }
+
+ .about:hover .home { 
+  color: #f598d0;
+  font-weight: bolder;
+  border-bottom: #f598d0 0.15rem solid;
+  border-spacing: 0.2rem;
+ }
+
+
+/*facfe9*/
 
 .banner {
   text-align: center;
   padding-top: 5rem;
   position: relative;
   padding-bottom: 8rem;
+  font-size: 1.7rem;
+  color: #484955;
+}
+
+.banner h1 {
+  font-weight: 100;
+  transition: all 0.5s ease-in allow-discrete;
 }
 
 .banner h2 {
-  padding-top: 1rem;
+  padding-top: 0.5rem;
+  font-weight: 100;
 }
+
+.strong {
+  font-weight: 500;
+}
+
+.creative {
+  position: relative;
+}
+
+
+.creative::after {
+  content: "";
+  width: 120%;
+  height: 0.6rem;
+  position: absolute;
+  background-image: url(/Users/isobeledmonds/Documents/Projects/natasha_portfolio/resources/underline.png);
+  background-position:100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: -0.4rem;
+  left: -0.4rem;
+}
+
 
 
 .my-work {
@@ -51,10 +132,14 @@ header {
   background-color: #9ce5c7;
   width: 100%;
   position: relative;
+  color: #484955;
 }
 
 .my-work h1 {
-  padding-left: 3rem;
+  padding-left: 2rem;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 3rem;
 }
 
 .hotpatch {
@@ -65,8 +150,17 @@ header {
   padding-top: 4rem;
   padding-bottom: 3rem;
   padding-right: 7rem;
-  border-bottom: 0.08rem solid #484955;
+ 
 }
+
+.description h1 {
+  font-weight: 100;
+}
+
+.description h3 {
+  font-weight: 200;
+}
+
 
 .button {
 display: flex;
@@ -84,11 +178,14 @@ button {
 }
 
 
+
 .breakline {
   display: flex;
   height: 2rem;
-  width: 75%;
-  
+  width: 85%;
+  border-bottom: 0.08rem solid #484955;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 
@@ -112,21 +209,30 @@ button {
 }
 
 .pic img {
-  width: 500px;
-  height: auto;
+    max-width: 100%;
+    width: 75rem;
+    height: auto;
+    width: auto\9; /* ie8 */
   
 }
 
 .padding {
   width: 20rem;
 }
-
-
+/* need to fix */
 footer {
-  padding-top: 2rem;
-  display: flex;
+  display: flexbox;
+  justify-content:center;
   align-items: center;
-  justify-content: center;
-  border-top: 0.1rem solid #484955;
-  
+  border-top: 0.09rem solid #484955;
+  height: 8rem;
+  text-align: center;
 }
+
+
+
+.contact {
+  font-weight: 600;
+}
+
+
