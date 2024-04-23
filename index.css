@@ -57,7 +57,7 @@ header {
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
-  background-color: #0803B0;
+  background-color: #484955;
   margin: 6px 2rem 0 0;
   transition: 0.4s;
   
@@ -74,7 +74,7 @@ header {
 }
 
 @media only screen and (max-width: 768px){
-  .menu {
+  .nav {
       visibility: collapse;
   }
 
